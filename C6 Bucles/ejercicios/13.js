@@ -5,6 +5,11 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
+  if (num !== Math.round(num)) {
+    return false;
+  } else if (num === 0 || num < 0 || num > 0){
+    return true;
+  }
 }
 
 module.exports = esEntero;
