@@ -4,8 +4,8 @@ function filter(arrayOfStrings) {
    // Tu código:
    var arrayA = [];
    for(let i = 0; i < arrayOfStrings.length; i++){
-      if(arrayOfStrings > 0 && arrayOfStrings[0].toString().toLowerCase().startsWith('a'))
-      arrayA.push(arrayOfStrings);
+      if(arrayOfStrings[i].toString().startsWith('a'))
+      arrayA.push(arrayOfStrings[i]);
    }
    return arrayA;
 }
